@@ -48,9 +48,12 @@ Recuerda registrar tus respuestas en el archivo `RESPUESTAS.md`
 
 # Etapa 4
 Compara los archivos `Dockerfile` de `movies-api` y `movies-front`. 
+R: movies-api tiene declaracion de GO
+R: movies-front tiene instancia de node
 
 Compara el atributo `build` del servicio `movies-api` con el de `movies-front`. 
-
 ¿Cuál es la diferencia? 
+R: Movies-api contiene atributo context: ./movies-api que permite ser más específico respecto al contexto de construcción de la imagen de docker
 
 ¿Qué pasa si los dejas iguales?
+R:   dado que poseen una estructura de contexto similar no hay cambios perceptibles en la construcción o ejecución del sistema completo
