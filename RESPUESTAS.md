@@ -18,7 +18,10 @@ flyway
 -locations=filesystem:/flyway/sql -connectRetries=60 migrate
 
 ## ETAPA 2
+¿Qué pasa si cambias el nombre del servicio de `postgres` a `db`? ¿Qué otros cambios tendrías que hacer?
 
-Escribe respuestas de la etapa 2 acá
+lab-ic-ms-2023-postgres-1  | 2023-08-08 00:22:59.733 UTC [1] LOG:  database system is ready to accept connections
+migration_flyway           | Flyway Community Edition 7.7.0 by Redgate
+migration_flyway           | WARNING: Connection error: The connection attempt failed. (Caused by db) Retrying in 1 sec...
 
-...
+Da error de conexión. 
